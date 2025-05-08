@@ -2,5 +2,33 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
+      <Table
+            id="userTable"
+            items="{
+            path: '/users'
+            }"
+            inset="false"
+            mode="None">
+            <columns>
+            <Column id="userTableColUsername"><Text id="userTableColUsernameLabel" text="Username"/></Column>
+            <Column id="userTableColName"><Text id="userTableColNameLabel" text="Name"/></Column>
+            <Column id="userTableColPhone"><Text id="userTableColPhoneLabel" text="Phone Number"/></Column>
+            <Column id="userTableColEmail"><Text id="userTableColEmailLabel" text="Email"/></Column>
+            <Column id="userTableColCarrierId"><Text id="userTableColCarrierIdLabel" text="Carrier ID"/></Column>
+            <Column id="userTableColType"><Text id="userTableColTypeLabel" text="Type"/></Column>
+            </columns>
+            <items>
+            <ColumnListItem id="userTableRowTemplate">
+                <cells>
+                <Text id="userTableColUsernameText" text="{username}"/>
+                <Text id="userTableColNameText" text="{name}"/>
+                <Link id="userTableColPhoneLink" text="{phone}" href="tel:{phone}"/>
+                <Link id="userTableColEmailLink" text="{email}" href="mailto:{email}"/>
+                <Text id="userTableColCarrierIdText" text="{carrierId}"/>
+                <Text id="userTableColTypeText" text="{type}"/>
+                </cells>
+            </ColumnListItem>
+            </items>
+        </Table>
     </Page>
 </mvc:View>

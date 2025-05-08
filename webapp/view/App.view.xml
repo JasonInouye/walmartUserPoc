@@ -3,5 +3,10 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
     <App id="app">
+        <pages>
+            <Page id="userListPage" title="User List">
+                <mvc:XMLView id="userSubView" viewName="com.walmart.walmart.user.poc.view.Main"/>
+            </Page>
+        </pages>
     </App>
 </mvc:View>

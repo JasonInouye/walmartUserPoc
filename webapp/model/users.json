@@ -1,0 +1,164 @@
+{ 
+  "users": [
+    {
+      "username": "jdoe",
+      "name": "John Doe",
+      "phone": "+1234567890",
+      "email": "jdoe@example.com",
+      "carrierId": "C001",
+      "type": "Admin"
+    },
+    {
+      "username": "asmith",
+      "name": "Alice Smith",
+      "phone": "+1987654321",
+      "email": "asmith@example.com",
+      "carrierId": "C002",
+      "type": "User"
+    },
+    {
+      "username": "bwayne",
+      "name": "Bruce Wayne",
+      "phone": "+1122334455",
+      "email": "bwayne@example.com",
+      "carrierId": "C003",
+      "type": "Manager"
+    },
+    {
+      "username": "ckent",
+      "name": "Clark Kent",
+      "phone": "+1222333444",
+      "email": "ckent@example.com",
+      "carrierId": "C004",
+      "type": "User"
+    },
+    {
+      "username": "dprince",
+      "name": "Diana Prince",
+      "phone": "+1333444555",
+      "email": "dprince@example.com",
+      "carrierId": "C005",
+      "type": "Admin"
+    },
+    {
+      "username": "pparker",
+      "name": "Peter Parker",
+      "phone": "+1444555666",
+      "email": "pparker@example.com",
+      "carrierId": "C006",
+      "type": "User"
+    },
+    {
+      "username": "tstark",
+      "name": "Tony Stark",
+      "phone": "+1555666777",
+      "email": "tstark@example.com",
+      "carrierId": "C007",
+      "type": "Manager"
+    },
+    {
+      "username": "srogers",
+      "name": "Steve Rogers",
+      "phone": "+1666777888",
+      "email": "srogers@example.com",
+      "carrierId": "C008",
+      "type": "User"
+    },
+    {
+      "username": "nromanoff",
+      "name": "Natasha Romanoff",
+      "phone": "+1777888999",
+      "email": "nromanoff@example.com",
+      "carrierId": "C009",
+      "type": "User"
+    },
+    {
+      "username": "bwilson",
+      "name": "Bruce Wilson",
+      "phone": "+1888999000",
+      "email": "bwilson@example.com",
+      "carrierId": "C010",
+      "type": "Admin"
+    },
+    {
+      "username": "hpotter",
+      "name": "Harry Potter",
+      "phone": "+1999000111",
+      "email": "hpotter@example.com",
+      "carrierId": "C011",
+      "type": "User"
+    },
+    {
+      "username": "rgranger",
+      "name": "Ron Granger",
+      "phone": "+1100111222",
+      "email": "rgranger@example.com",
+      "carrierId": "C012",
+      "type": "User"
+    },
+    {
+      "username": "hgranger",
+      "name": "Hermione Granger",
+      "phone": "+1200222333",
+      "email": "hgranger@example.com",
+      "carrierId": "C013",
+      "type": "Manager"
+    },
+    {
+      "username": "lskywalker",
+      "name": "Luke Skywalker",
+      "phone": "+1300333444",
+      "email": "lskywalker@example.com",
+      "carrierId": "C014",
+      "type": "User"
+    },
+    {
+      "username": "lorgana",
+      "name": "Leia Organa",
+      "phone": "+1400444555",
+      "email": "lorgana@example.com",
+      "carrierId": "C015",
+      "type": "Admin"
+    },
+    {
+      "username": "hsolo",
+      "name": "Han Solo",
+      "phone": "+1500555666",
+      "email": "hsolo@example.com",
+      "carrierId": "C016",
+      "type": "User"
+    },
+    {
+      "username": "c3po",
+      "name": "C-3PO",
+      "phone": "+1600666777",
+      "email": "c3po@example.com",
+      "carrierId": "C017",
+      "type": "User"
+    },
+    {
+      "username": "rd2d2",
+      "name": "R2-D2",
+      "phone": "+1700777888",
+      "email": "rd2d2@example.com",
+      "carrierId": "C018",
+      "type": "User"
+    },
+    {
+      "username": "yoda",
+      "name": "Yoda",
+      "phone": "+1800888999",
+      "email": "yoda@example.com",
+      "carrierId": "C019",
+      "type": "Manager"
+    },
+    {
+      "username": "vader",
+      "name": "Darth Vader",
+      "phone": "+1900999000",
+      "email": "vader@example.com",
+      "carrierId": "C020",
+      "type": "Admin"
+    }
+  ]
+}
