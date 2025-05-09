@@ -1,0 +1,31 @@
+<mvc:View
+    controllerName="com.walmart.walmart.user.poc.controller.Detail"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="detailPage" title="Edit User">
+        <content>
+            <VBox id="detailVBox" class="sapUiSmallMargin">
+                <Label id="usernameLabel" text="Username"/>
+                <Input id="usernameInput" value="{username}" editable="false"/>
+
+                <Label id="nameLabel" text="Name"/>
+                <Input id="nameInput" value="{name}"/>
+
+                <Label id="phoneLabel" text="Phone Number"/>
+                <Input id="phoneInput" value="{phone}"/>
+
+                <Label id="emailLabel" text="Email"/>
+                <Input id="emailInput" value="{email}"/>
+
+                <Label id="carrierIdLabel" text="Carrier ID"/>
+                <Input id="carrierIdInput" value="{carrierId}"/>
+
+                <Label id="typeLabel" text="Type"/>
+                <Input id="typeInput" value="{type}"/>
+
+                <Button id="saveButton" text="Save" type="Emphasized" press=".onSave"/>
+                <Button id="cancelButton" text="Cancel" press=".onCancel"/>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
