@@ -2,7 +2,7 @@
     controllerName="com.walmart.walmart.user.poc.controller.Detail"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
-    <Page id="detailPage" title="Edit User">
+    <Page id="detailPage" title="Edit User" showNavButton="true" navButtonPress=".onNavBack">
         <content>
             <VBox id="detailVBox" class="sapUiSmallMargin">
                 <Label id="usernameLabel" text="Username"/>
@@ -22,10 +22,13 @@
 
                 <Label id="typeLabel" text="Type"/>
                 <Input id="typeInput" value="{type}"/>
-
-                <Button id="saveButton" text="Save" type="Emphasized" press=".onSave"/>
-                <Button id="cancelButton" text="Cancel" press=".onCancel"/>
             </VBox>
         </content>
+        <footer>
+            <Toolbar id="detailToolbar">
+                <ToolbarSpacer id="detailSpacer"/>
+                <Button id="saveButton" text="Save" type="Emphasized" press=".onSave"/>
+            </Toolbar>
+        </footer>
     </Page>
 </mvc:View>

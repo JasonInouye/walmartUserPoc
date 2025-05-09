@@ -7,9 +7,34 @@ sap.ui.define(
   (Controller, JSONModel, MessageToast) => {
     return Controller.extend("com.walmart.walmart.user.poc.controller.Main", {
       onInit: function () {
-        const oModel = new JSONModel();
-        oModel.loadData("model/users.json");
-        this.getView().setModel(oModel);
+        const oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+        oRouter
+          .getRoute("main")
+          .attachPatternMatched(this._onRouteMatched, this);
+
+        const oList = this.getView().byId("userTable");
+        console.log("What is the list Id?", oList);
+
+        // const oModel = this.getOwnerComponent().getModel();
+        // this.getView().setModel(oModel);
+        // console.log("Model Data in the Main view:", oModel.getData());
+      },
+
+      _onRouteMatched: function () {
+        console.log("Main route matched. Refreshing list binding...");
+
+        const oList = this.getView().byId("userTable");
+        if (oList) {
+          console.log("Rebinding the table...");
+          oList.bindItems({
+            path: "/users",
+            template: oList.getBindingInfo("items").template,
+          });
+        } else {
+          console.error(
+            "List not found! Ensure the ID 'userTable' is correct."
+          );
+        }
       },
 
       onEditUser: function (oEvent) {

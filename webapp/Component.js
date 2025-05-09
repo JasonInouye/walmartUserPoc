@@ -17,6 +17,7 @@ sap.ui.define(
         // Set the JSON model globally
         const oModel = new JSONModel();
         oModel.loadData("model/users.json"); // Load your users.json file
+        oModel.setDefaultBindingMode("TwoWay"); // Set the default binding mode to TwoWay
         this.setModel(oModel); // Attach the model to the component
 
         // enable routing
