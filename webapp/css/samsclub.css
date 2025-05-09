@@ -1,0 +1,12 @@
+.sapMBar {
+  background-color: #005596 !important;
+}
+
+.sapMText, .sapMLabel {
+  color: #005596;
+}
+
+.sapMBtnInner {
+  background-color: #0072ce !important;
+  color: white !important;
+}
